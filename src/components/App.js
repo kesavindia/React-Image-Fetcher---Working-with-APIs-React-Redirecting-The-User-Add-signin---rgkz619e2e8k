@@ -4,8 +4,8 @@ import { Loader } from './Loader';
 import { PhotoFrame } from './PhotoFrame';
 const App = () => {
   const [id,setId] = React.useState()
-  const [loading,setLoading] = React.useState(false)
-  const [userData, setUserData] = React.useState()
+  const [loading,setLoading] = useState(false)
+  const [userData, setUserData] = useState()
   const handleChange = (e)=>{
     setId(e.target.value)
     getData(e.target.value)
