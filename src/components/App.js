@@ -28,7 +28,7 @@ const App = () => {
     <div>
      <input value={id} onChange={handleChange} type='number'/>
      {
-        loading?<Loader/>: !loading && userData && id !=0? <PhotoFrame url= {userData.url} title={userData.title}/>:null
+        loading?<Loader/>: !loading && userData && id !=""? <PhotoFrame url= {userData.url} title={userData.title}/>:null
      }
      </div>
   )
