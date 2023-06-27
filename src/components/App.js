@@ -6,7 +6,7 @@ const App = () => {
   const [id,setId] = React.useState()
   const [loading,setLoading] = React.useState(false)
   const [userData, setUserData] = React.useState()
-  const handleChange = ()=>{
+  const handleChange = (e)=>{
     setId(e.target.value)
     getData(e.target.value)
   }
