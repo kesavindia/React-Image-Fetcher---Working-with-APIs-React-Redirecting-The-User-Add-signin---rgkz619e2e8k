@@ -13,7 +13,7 @@ const App = () => {
   async function getData(id){
     try{
         setLoading(true)
-        const res = await fetch('https://jsonplaceholder.typicode.com/photos/${id}')
+        const res = await fetch(`https://jsonplaceholder.typicode.com/photos/${id}`)
         const data = await res.json()
         setUserData(data)
     }
